@@ -3,7 +3,7 @@ package com.chamberscode;
 import java.util.Arrays;
 
 //an array of a specific data type
-public class TheArrays {
+public class WorkingWithArrays {
     public static void main(String[] args){
         String[] colors = new String[5];
 colors[0] = "red";

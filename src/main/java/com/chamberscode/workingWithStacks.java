@@ -1,7 +1,7 @@
 package com.chamberscode;
 
 import java.util.Stack;
-
+//LIFO - last in first out
 public class workingWithStacks {
     public static void main(String[] args){
         Stack<Integer> stack = new Stack<>();

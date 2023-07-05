@@ -6,10 +6,7 @@ import java.util.List;
 //arraylist is used a lot
 public class WorkingWithLists {
      public static void main(String[] args){
-         List<String> colorsUnmodifiable = List.of(
-                 "blue",
-                 "yellow"
-         );
+
 
          List<String> colors = new ArrayList<>();
          colors.add("blue");

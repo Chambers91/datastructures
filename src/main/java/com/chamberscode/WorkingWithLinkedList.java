@@ -1,5 +1,7 @@
 package com.chamberscode;
 
+import java.util.LinkedList;
+
 public class WorkingWithLinkedList {
 
     //Types of linked list
@@ -15,33 +17,41 @@ public class WorkingWithLinkedList {
     //circular linked list - last element is linked to the first element
 
     public static void main(String[] args){
-class Node{
-    int data;
-    Node next;
+        LinkedList linky = new LinkedList();
+        linky.add("Terence");
+        linky.add("Jon");
+        linky.add("Lonny");
 
-    public Node(int data) {
-        this.data = data;
-//creating new objects
+        linky.clear();
 
-        Node head = new Node(11);
-        Node nodeB = new Node(21);
-        Node nodeC = new Node(19);
-        Node nodeD = new Node(91);
-
-        head.next = nodeB;
-        nodeB.next = nodeC;
-        nodeC.next = nodeD;
-    }
-
-   public static int countNodes(Node head){
- int count = 1;
- Node current = head;
- while(current.next != null){
-     current = current.next;
-     count+= 1;
- }
-         return count;
-}}
+        System.out.println(linky);
+//class Node{
+//    int data;
+//    Node next;
+//
+//    public Node(int data) {
+//        this.data = data;
+////creating new objects
+//
+//        Node head = new Node(11);
+//        Node nodeB = new Node(21);
+//        Node nodeC = new Node(19);
+//        Node nodeD = new Node(91);
+//
+//        head.next = nodeB;
+//        nodeB.next = nodeC;
+//        nodeC.next = nodeD;
+//    }
+//
+//   public static int countNodes(Node head) {
+//       int count = 1;
+//       Node current = head;
+//       while (current.next != null) {
+//           current = current.next;
+//           count += 1;
+//       }
+//       return count;
+//   }}
 
     }
 

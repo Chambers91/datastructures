@@ -1,5 +1,6 @@
 package com.chamberscode;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class WorkingWithLinkedList {
@@ -17,14 +18,19 @@ public class WorkingWithLinkedList {
     //circular linked list - last element is linked to the first element
 
     public static void main(String[] args){
-        LinkedList linky = new LinkedList();
-        linky.add("Terence");
-        linky.add("Jon");
-        linky.add("Lonny");
+        LinkedList <Integer> linky = new LinkedList<Integer>();
+        linky.add(5);
+        linky.add(3);
+        linky.add(9);
 
-        linky.clear();
+        System.out.println(linky.get(1));
 
-        System.out.println(linky);
+        Iterator it = linky.iterator();
+        while (it.hasNext()){
+            if ((int)it.next() == 3){
+                System.out.println("number 3 has been found");
+            }
+        }
 //class Node{
 //    int data;
 //    Node next;

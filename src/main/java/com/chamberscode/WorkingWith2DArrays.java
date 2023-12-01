@@ -15,9 +15,9 @@ public class WorkingWith2DArrays {
       }}
 
   char [][] boardTwo = new char [][]{
-          new char[]{'O','-','-'},
-          new char[]{'O','-','-'},
-          new char[]{'O','-','-'},
+          new char[]{'O','x','-'},
+          new char[]{'-','x','-'},
+          new char[]{'-','x','-'},
         };
 
         board[0][0] = '0';
